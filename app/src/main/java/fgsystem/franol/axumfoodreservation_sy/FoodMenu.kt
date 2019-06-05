@@ -27,6 +27,9 @@ class FoodMenu : Fragment() {
             fr.addToBackStack(null)
             fr.commit()
         }
+
+
+
         return view
     }
 

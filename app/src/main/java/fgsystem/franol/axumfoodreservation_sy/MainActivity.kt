@@ -52,6 +52,18 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         }
     }
 
+      fun OnAddtoChartSelected(launch: Launch){
+        if(resources.configuration.orientation == Configuration.ORIENTATION_PORTRAIT) {
+
+            val launchMenuActivity = Intent(this, LaunchMenuActivity::class.java)
+            launchMenuActivity.putExtra("launch",launch)
+            startActivity(launchMenuActivity)
+
+        }
+    }
+
+
+
     override fun onBackPressed() {
         val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
         if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
