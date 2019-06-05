@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Axum_food_reservation</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="Login">Log in</string>
+
+    <string name="Food_Menu">Food Menu</string>
+    <string name="Berevarge_Menu">Berevarge Menu</string>
+    <string name="Order">Order</string>
+    <string name="About">About</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+
+    <string name="break_fast">Breakfast</string>
+    <string name="Launch">Launch</string>
+    <string name="dinner">Dinner</string>
+    <string name="other">Other</string>
+
+
+    <string name="foodname">foodname</string>
+    <string name="add_to_cart">Add To Cart</string>
+    <string name="menu_detail">Menu details and nutrition</string>
+    <string name="food_description">This is sample food description</string>
+
+
+    <string name="Axum">Axum Food order</string>
+    <string name="address">piassa, Addis Abeba,Infront of aait</string>
+    <string name="ourmeals">Our Meals</string>
+    <string name="contact">Contact Information</string>
+    <string name="Address_text">Address :</string>
+    <string name="Email">sample@email.com</string>
+    <string name="Phone">+123456789</string>
+    <string name="Phone_text">Phone :</string>
+    <string name="Email_text">Email :</string>
+    <string name="add">+</string>
+    <string name="sub">-</string>
+
+
+
+    <string name="sample_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+        has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+        and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+        electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+        PageMaker including versions of Lorem Ipsum.
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
