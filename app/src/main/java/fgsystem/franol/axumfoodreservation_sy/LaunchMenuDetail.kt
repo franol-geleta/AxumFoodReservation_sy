@@ -10,8 +10,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
+import com.google.android.material.snackbar.Snackbar
 import fgsystem.franol.axumfoodreservation_sy.data.Addtocart
 import fgsystem.franol.axumfoodreservation_sy.data.Launch
+import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.fragment_launch_menu_detail.*
 import kotlinx.android.synthetic.main.fragment_launch_menu_detail.view.*
 
@@ -19,9 +21,9 @@ import kotlinx.android.synthetic.main.fragment_launch_menu_detail.view.*
 
 class LaunchMenuDetail : Fragment() {
 
-    private lateinit var addtocartButton : Button
-    private lateinit var  nameoffood : TextView
-    private lateinit var  priceoffood : TextView
+    val addtocartButton = addtocart
+    val nameoffood = name_detial
+    val priceoffood = price_detail
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -34,20 +36,24 @@ class LaunchMenuDetail : Fragment() {
         view.name_detial.text = launch.foodname
         view.price_detail.text = launch.price
         // Inflate the layout for this fragment
-        return view
 
-        addtocartButton = addtocart
-        nameoffood = name_detial
-        priceoffood = price_detail
+
+
 
         addtocartButton.setOnClickListener {
-            val food = readFields()
-            val replayFoodIntent = Intent()
-            replayFoodIntent.putExtra("FOOD",food)
-            activity?.setResult(Activity.RESULT_OK,replayFoodIntent)
-            activity?.finish()
+
+
+            Snackbar.make(rootLayout, "Please enter email address", Snackbar.LENGTH_SHORT).show()
+
+//            val food = readFields()
+//            val replayFoodIntent = Intent()
+//            replayFoodIntent.putExtra("FOOD",food)
+//            getActivity()!!.setResult(Activity.RESULT_OK,replayFoodIntent)
+//            getActivity()?.finish()
+
 
         }
+        return view
 
 
     }
