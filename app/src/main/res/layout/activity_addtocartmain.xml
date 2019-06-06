@@ -5,12 +5,31 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".Addtocartmain">
+        tools:context=".MainActivity">
 
-    <androidx.recyclerview.widget.RecyclerView android:layout_width="match_parent"
-                                               android:layout_height="match_parent"
-                                               android:id="@+id/recycler_view"
-                                               android:scrollbars="vertical"></androidx.recyclerview.widget.RecyclerView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
 
+            android:clickable="true" app:srcCompat="@drawable/ic_add_shopping_cart"
+            android:id="@+id/feb"
+            app:layout_constraintTop_toTopOf="@+id/recycler_view" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/recycler_view"
+            app:layout_constraintEnd_toEndOf="@+id/recycler_view"
+            app:layout_constraintStart_toStartOf="@+id/recycler_view" app:layout_constraintHorizontal_bias="0.976"
+            app:layout_constraintVertical_bias="1.0"/>
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp">
+    </androidx.recyclerview.widget.RecyclerView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

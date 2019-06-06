@@ -30,9 +30,13 @@ class Addtocartmain : AppCompatActivity() {
 
 
 
+        feb.setOnClickListener{
+            val intent = Intent(this,AddtocartActivity::class.java)
+            startActivityForResult(intent,NEW_COURSE_ACTIVITY_REQUEST_CODE)
+        }
         addtocartViewModel = ViewModelProviders.of(this).get(AddtocartViewModel::class.java)
-        addtocartViewModel.allFood.observe(this, Observer { foods ->
-            foods?.let { addtocartListAdapter.setFood(foods) }
+        addtocartViewModel.allFood.observe(this, Observer {
+                foods -> foods?.let { addtocartListAdapter.setFood(foods) }
         })
 
     }

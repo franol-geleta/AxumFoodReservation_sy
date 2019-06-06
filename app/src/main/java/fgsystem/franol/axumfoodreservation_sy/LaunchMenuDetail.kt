@@ -1,7 +1,6 @@
 package fgsystem.franol.axumfoodreservation_sy
 
 
-import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -10,10 +9,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
-import androidx.cardview.widget.CardView
 import fgsystem.franol.axumfoodreservation_sy.data.Addtocart
 import fgsystem.franol.axumfoodreservation_sy.data.Launch
-import kotlinx.android.synthetic.main.fragment_launch_menu_detail.*
 import kotlinx.android.synthetic.main.fragment_launch_menu_detail.view.*
 
 
@@ -21,8 +18,8 @@ import kotlinx.android.synthetic.main.fragment_launch_menu_detail.view.*
 class LaunchMenuDetail : Fragment() {
 
 //    private lateinit var addtocartButton : Button
-//    private lateinit var  nameoffood : TextView
-//    private lateinit var  priceoffood : TextView
+    private lateinit var  nameoffood : TextView
+    private lateinit var  priceoffood : TextView
 
 
 
@@ -34,8 +31,8 @@ class LaunchMenuDetail : Fragment() {
 
         val launch = arguments?.getSerializable("launch") as Launch
 
-        view.name_detial.text = launch.foodname
-        view.price_detail.text = launch.price
+        view.name_detial_activity.text = launch.foodname
+        view.price_detail_activity.text = launch.price
         // Inflate the layout for this fragment
 
 
@@ -46,10 +43,14 @@ class LaunchMenuDetail : Fragment() {
 
         val addtocart = view.findViewById<Button>(R.id.addtocart)
         addtocart.setOnClickListener {
-            val fr = fragmentManager!!.beginTransaction()
-            fr.replace(R.id.relativelayout, LaunchMenu())
-            fr.addToBackStack(null)
-            fr.commit()
+           val intent = Intent(this@LaunchMenuDetail.context, AddtocartActivity::class.java)
+            startActivity(intent)
+
+//            val food = readFields()
+//            val replayFoodIntent = Intent()
+//            replayFoodIntent.putExtra("FOOD",food)
+//            activity?.setResult(Activity.RESULT_OK,replayFoodIntent)
+//            activity?.finish()
         }
 
 //        addtocartButton.setOnClickListener {
@@ -65,10 +66,10 @@ class LaunchMenuDetail : Fragment() {
 
     }
 
-//    private fun readFields() = Addtocart(
-//        nameoffood.text.toString(),
-//        priceoffood.text.toString()
-//    )
+    private fun readFields() = Addtocart(
+        nameoffood.text.toString(),
+        priceoffood.text.toString()
+    )
 
     interface OnAddtoChartSelected {
         fun OnAddtoChartSelected(addtocart: Addtocart)

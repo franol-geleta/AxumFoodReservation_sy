@@ -24,7 +24,7 @@ abstract class AddtocartDatabase : RoomDatabase(){
             synchronized(this) {
                 val instance = Room.databaseBuilder(
                     context.applicationContext,
-                    AddtocartDatabase::class.java, "addtochart_database"
+                    AddtocartDatabase::class.java, "addtocart_database"
                 ).build()
 
                 INSTANCE = instance
