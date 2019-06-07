@@ -6,7 +6,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-
+import android.widget.Button
+import androidx.cardview.widget.CardView
+import androidx.navigation.Navigation.findNavController
 
 
 class Main_Page : Fragment() {
@@ -18,6 +20,8 @@ class Main_Page : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.main_page, container, false)
     }
+
+
 
 
 }

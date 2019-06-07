@@ -21,6 +21,8 @@ import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper
 class Login : AppCompatActivity() {
 
 
+
+
     internal var db: FirebaseDatabase? = null
     internal var users: DatabaseReference? = null
 
@@ -56,6 +58,7 @@ class Login : AppCompatActivity() {
 //
         btnSignIn.setOnClickListener { showLoginDialog() }
     }
+
 
     private fun showLoginDialog() {
 
