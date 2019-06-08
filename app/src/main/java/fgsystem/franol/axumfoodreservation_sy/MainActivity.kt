@@ -103,7 +103,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             }
 
             else -> {
-                Main_Page()
+                Login_fragment()
             }
         }
 

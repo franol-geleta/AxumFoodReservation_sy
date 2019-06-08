@@ -43,7 +43,7 @@ class LaunchMenuDetail : Fragment() {
 
         val addtocart = view.findViewById<Button>(R.id.addtocart)
         addtocart.setOnClickListener {
-           val intent = Intent(this@LaunchMenuDetail.context, AddtocartActivity::class.java)
+           val intent = Intent(this@LaunchMenuDetail.context, Login_fragment::class.java)
             startActivity(intent)
 
 //            val food = readFields()

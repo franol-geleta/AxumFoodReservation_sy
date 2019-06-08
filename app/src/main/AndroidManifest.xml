@@ -9,12 +9,11 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".AddtocartActivity">
-        </activity>
+
         <activity android:name=".Addtocartmain">
         </activity>
         <activity
-                android:name=".Login"
+                android:name=".MainActivity"
                 android:label="@string/app_name"
                 android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -24,7 +23,7 @@
             </intent-filter>
         </activity>
         <activity
-                android:name=".MainActivity"
+                android:name=".Login"
                 android:label="@string/app_name"
                 android:theme="@style/AppTheme.NoActionBar">
         </activity>

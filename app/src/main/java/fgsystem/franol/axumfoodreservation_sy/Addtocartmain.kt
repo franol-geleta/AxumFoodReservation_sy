@@ -31,7 +31,7 @@ class Addtocartmain : AppCompatActivity() {
 
 
         feb.setOnClickListener{
-            val intent = Intent(this,AddtocartActivity::class.java)
+            val intent = Intent(this,Login_fragment::class.java)
             startActivityForResult(intent,NEW_COURSE_ACTIVITY_REQUEST_CODE)
         }
         addtocartViewModel = ViewModelProviders.of(this).get(AddtocartViewModel::class.java)
