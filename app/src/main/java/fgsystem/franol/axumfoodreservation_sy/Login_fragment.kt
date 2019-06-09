@@ -14,6 +14,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.cardview.widget.CardView
 import com.google.android.material.snackbar.Snackbar
 import com.rengwuxian.materialedittext.MaterialEditText
+import kotlinx.android.synthetic.main.fragment_fragment___login.*
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig
 
 

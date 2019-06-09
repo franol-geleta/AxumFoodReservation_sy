@@ -15,4 +15,7 @@
     <color name="ballRelaseColor">#9e9e9e</color>
     <color name ="backgroundtext">#40FF913A</color>
 
+
+    <color name="colorFormBackground">#e4e4e4</color>
+
 </resources>
