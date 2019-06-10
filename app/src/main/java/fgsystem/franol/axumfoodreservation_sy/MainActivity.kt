@@ -13,6 +13,7 @@ import com.google.android.material.navigation.NavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import android.view.Menu
+import androidx.fragment.app.Fragment
 import fgsystem.franol.axumfoodreservation_sy.data.Launch
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -45,9 +46,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     override  fun OnFoodSelected(launch: Launch){
         if(resources.configuration.orientation == Configuration.ORIENTATION_PORTRAIT) {
 
-            val launchMenuActivity = Intent(this, LaunchMenuActivity::class.java)
-            launchMenuActivity.putExtra("launch",launch)
-            startActivity(launchMenuActivity)
+//            val launchMenuActivity = Intent(this, LaunchMenuActivity::class.java)
+//            launchMenuActivity.putExtra("launch",launch)
+//            startActivity(launchMenuActivity)
 
         }
     }
@@ -55,9 +56,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
       fun OnAddtoChartSelected(launch: Launch){
         if(resources.configuration.orientation == Configuration.ORIENTATION_PORTRAIT) {
 
-            val launchMenuActivity = Intent(this, LaunchMenuActivity::class.java)
-            launchMenuActivity.putExtra("launch",launch)
-            startActivity(launchMenuActivity)
+//            val launchMenuActivity = Intent(this, LaunchMenuActivity::class.java)
+//            launchMenuActivity.putExtra("launch",launch)
+//            startActivity(launchMenuActivity)
 
         }
     }
@@ -98,18 +99,21 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     fun displayScreen(id: Int){
         val fragment = when(id){
-            R.id.nav_home -> {
+            R.id.food_menu -> {
                 FoodMenu()
+            }
+            R.id.berevrage_Menu -> {
+                ListFoods()
             }
 
             else -> {
-                Login_fragment()
+                Main_Page()
             }
         }
 
         supportFragmentManager
             .beginTransaction()
-            .replace(R.id.relativelayout, fragment)
+            .replace(R.id.relativelayout, fragment as Fragment)
             .commit()
 
     }

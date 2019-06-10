@@ -1,3 +1,12 @@
 package fgsystem.franol.axumfoodreservation_sy.data
 
-class User(val id: Int, val email: String, val name: String, val school: String)
+import androidx.room.Entity
+import java.io.Serializable
+
+
+@Entity(tableName = "users")
+class User(
+    val id: Int,
+    val email: String,
+    val name: String,
+    val school: String):Serializable

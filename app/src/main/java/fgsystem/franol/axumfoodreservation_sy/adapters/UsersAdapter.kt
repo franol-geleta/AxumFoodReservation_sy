@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import fgsystem.franol.axumfoodreservation_sy.R
 import fgsystem.franol.axumfoodreservation_sy.data.User
 
-class UsersAdapter(private val mCtx: Context, private val userList: List<User>) :
+private class UsersAdapter(private val mCtx: Context, private val userList: List<User>) :
     RecyclerView.Adapter<UsersAdapter.UsersViewHolder>() {
 
     @NonNull

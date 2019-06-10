@@ -37,7 +37,7 @@
 
     <fragment
             android:id="@+id/flow_step_one_dest"
-            android:name="fgsystem.franol.axumfoodreservation_sy.Login"
+            android:name="fgsystem.franol.axumfoodreservation_sy.Login_fragment"
             tools:layout="@layout/fragment_food_menu"
     >
         <argument
@@ -48,6 +48,8 @@
         <action android:id="@+id/next_action" app:destination="@id/home_dest" app:enterAnim="@anim/slide_in_left"
                 app:exitAnim="@anim/slide_out_left" app:popEnterAnim="@anim/slide_in_left"
                 app:popExitAnim="@anim/slide_out_right" app:popUpTo="@+id/home_dest"/>
+        <action android:id="@+id/action_flow_step_one_dest_to_flow_step_two_dest"
+                app:destination="@id/flow_step_two_dest"/>
     </fragment>
 
     <fragment

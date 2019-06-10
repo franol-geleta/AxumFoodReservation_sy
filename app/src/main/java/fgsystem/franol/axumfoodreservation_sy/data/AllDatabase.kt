@@ -7,15 +7,18 @@ import androidx.room.RoomDatabase
 
 
 @Database(entities = arrayOf(Addtocart::class), version = 1)
-abstract class AddtocartDatabase : RoomDatabase(){
+abstract class AllDatabase : RoomDatabase(){
 
     abstract fun AddtocartDao() : AddtocartDao
+    abstract fun FoodDao() : FoodDao
+    abstract fun UserDao() : UserDao
+
 
     companion object {
         @Volatile
-        private var INSTANCE: AddtocartDatabase? = null
+        private var INSTANCE: AllDatabase? = null
 
-        fun getDatabase(context: Context): AddtocartDatabase {
+        fun getDatabase(context: Context): AllDatabase {
             val tempInstance = INSTANCE
             if (tempInstance != null) {
                 return tempInstance
@@ -24,7 +27,7 @@ abstract class AddtocartDatabase : RoomDatabase(){
             synchronized(this) {
                 val instance = Room.databaseBuilder(
                     context.applicationContext,
-                    AddtocartDatabase::class.java, "addtocart_database"
+                    AllDatabase::class.java, "addtocart_database"
                 ).build()
 
                 INSTANCE = instance

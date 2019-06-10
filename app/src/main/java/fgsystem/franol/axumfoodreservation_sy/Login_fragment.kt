@@ -41,10 +41,10 @@ class Login_fragment : Fragment() {
 
 
 
-        val btnRegister = view.findViewById<Button>(R.id.btnRegister)
-        btnRegister.setOnClickListener {
-            showRegisterdialog()
-        }
+//        val btnRegister = view.findViewById<Button>(R.id.btnRegister)
+////        btnRegister.setOnClickListener {
+////            showRegisterdialog()
+//        }
 
 //
 //        btnSignIn.setOnClickListener { showLoginDialog() }
