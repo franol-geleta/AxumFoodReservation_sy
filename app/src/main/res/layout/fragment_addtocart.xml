@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+                name="commentClickListener"
+                type="android.view.View.OnClickListener"/>
+        <variable
+                name="contactClickListener"
+                type="android.view.View.OnClickListener"/>
+        <variable
+                name="interestedClickListener"
+                type="android.view.View.OnClickListener"/>
+        <variable
+                name="product"
+                type="com.example.android.databinding.basicsample.data.fooddatabindingsoloution"/>
+
+    </data>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
                                                    xmlns:app="http://schemas.android.com/apk/res-auto"
                                                    xmlns:tools="http://schemas.android.com/tools"
@@ -109,3 +126,4 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
