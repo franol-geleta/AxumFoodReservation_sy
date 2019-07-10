@@ -1,6 +1,7 @@
 package fgsystem.franol.axumfoodreservation_sy.repository
 
 import androidx.lifecycle.LiveData
+import fgsystem.franol.axumfoodreservation_sy.Network.ApiServices
 import fgsystem.franol.axumfoodreservation_sy.data.Addtocart
 import fgsystem.franol.axumfoodreservation_sy.data.AddtocartDao
 import kotlinx.coroutines.Dispatchers
@@ -19,6 +20,15 @@ class AddtocartRepository(private val addtocartDao: AddtocartDao){
     fun insertFood(addtocart: Addtocart){
         addtocartDao.insertFood(addtocart)
     }
+    suspend fun deletefood(addtocart: Addtocart): Response<Void> =
+        withContext(Dispatchers.IO){
+            ApiServices.deleteFood(addtocart).await()
+        }
+    suspend fun updateMedical(addtocart: Addtocart):  Response<Addtocart> =
+        withContext(Dispatchers.IO){
+            ApiServices.updateFood(addtocart).await()
+        }
+
 }
 
 
