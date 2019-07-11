@@ -13,7 +13,7 @@
         android:orientation="vertical"
         android:gravity="bottom">
 
-    <TextView
+    <com.rengwuxian.materialedittext.MaterialAutoCompleteTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingTop="@dimen/nav_header_vertical_spacing"
@@ -22,7 +22,7 @@
             android:background="@color/backgroundtext"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
 
-    <TextView
+    <com.rengwuxian.materialedittext.MaterialAutoCompleteTextView
             android:layout_width="match_parent"
             android:background="@color/backgroundtext"
             android:layout_height="wrap_content"

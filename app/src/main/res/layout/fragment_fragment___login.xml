@@ -27,7 +27,7 @@
                 android:layout_centerHorizontal="true"
                 android:gravity="center_horizontal">
 
-            <TextView
+            <com.rengwuxian.materialedittext.MaterialEditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="A X U M"
@@ -35,7 +35,7 @@
                     android:textAlignment="center"
                     android:textColor="@android:color/white"/>
 
-            <TextView
+            <com.rengwuxian.materialedittext.MaterialEditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
@@ -47,7 +47,7 @@
         </LinearLayout>
 
 
-        <TextView
+        <com.rengwuxian.materialedittext.MaterialEditText
                 android:id="@+id/txt_rider_app"
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
@@ -72,7 +72,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                     android:id="@+id/btnSignIn"
                     android:background="@drawable/btn_sign_in_background"
                     android:textColor="@android:color/black"
@@ -82,7 +82,7 @@
                     android:layout_weight="1"
                     android:layout_height="wrap_content"/>
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                     android:id="@+id/btnRegister"
                     android:background="@drawable/btn_register_background"
                     android:textColor="@android:color/black"

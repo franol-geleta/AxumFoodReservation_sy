@@ -8,7 +8,7 @@
                 android:background="@color/colorPrimary"
                 tools:context=".Fragment__Login">
 
-    <TextView
+    <com.rengwuxian.materialedittext.MaterialAutoCompleteTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_above="@id/linearLayout"
@@ -29,7 +29,7 @@
             android:orientation="vertical"
             android:padding="10dp">
 
-        <EditText
+        <com.rengwuxian.materialedittext.MaterialEditText
                 android:id="@+id/editTextEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -38,7 +38,7 @@
                 android:hint="email"
                 android:inputType="textEmailAddress" />
 
-        <EditText
+        <com.rengwuxian.materialedittext.MaterialEditText
                 android:id="@+id/editTextPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -50,7 +50,7 @@
 
     </LinearLayout>
 
-    <TextView
+    <com.rengwuxian.materialedittext.MaterialAutoCompleteTextView
             android:id="@+id/textViewRegister"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -63,7 +63,7 @@
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
             android:textColor="@color/colorPrimaryDark" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonLogin"
             android:layout_width="180dp"
             android:layout_height="wrap_content"

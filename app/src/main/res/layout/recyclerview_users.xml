@@ -31,21 +31,21 @@
             android:orientation="vertical"
             android:padding="4dp">
 
-            <TextView
+            <com.rengwuxian.materialedittext.MaterialAutoCompleteTextView
                 android:id="@+id/textViewName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/Axum"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline" />
 
-            <TextView
+            <com.rengwuxian.materialedittext.MaterialAutoCompleteTextView
                 android:id="@+id/textViewEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/Axum"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
 
-            <TextView
+            <com.rengwuxian.materialedittext.MaterialAutoCompleteTextView
                 android:id="@+id/textViewSchool"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
