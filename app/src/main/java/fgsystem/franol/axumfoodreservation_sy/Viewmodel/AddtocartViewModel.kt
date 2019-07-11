@@ -33,8 +33,7 @@ class AddtocartViewModel(application: Application):AndroidViewModel(application)
 
 class AddtocartViewModel(application: Application): AndroidViewModel(application) {
 
-    val firstname = "Yabii"
-    val lastname = "Biruk"
+
 
 
 
@@ -57,14 +56,14 @@ class AddtocartViewModel(application: Application): AndroidViewModel(application
     val deleteResponse: MutableLiveData<Response<Addtocart>>
         get() = _deleteResponse
 
-    fun insertMedical(addtocart: Addtocart) = viewModelScope.launch(Dispatchers.IO) {
+    fun insertfood(addtocart: Addtocart) = viewModelScope.launch(Dispatchers.IO) {
         addtocartRepository.insertFood(addtocart)
     }
-    fun deleteMedical(addtocart: Addtocart) = viewModelScope.launch {
+    fun deletefood(addtocart: Addtocart) = viewModelScope.launch {
 
         addtocartRepository.deleteFood(addtocart)
     }
-    fun updateMedical(addtocart: Addtocart) = viewModelScope.launch {
+    fun updatefood(addtocart: Addtocart) = viewModelScope.launch {
         addtocartRepository.updateMedical(addtocart)
     }
 }
